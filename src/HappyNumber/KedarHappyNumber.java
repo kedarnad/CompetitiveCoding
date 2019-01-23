@@ -1,9 +1,16 @@
 package HappyNumber;
 
-public class KedarHappyNumber {
-    public static boolean isHappy(int n) {
+import java.util.HashSet;
 
+public class KedarHappyNumber {
+    public static void main(String args[]) {
+        System.out.println(new KedarHappyNumber().isHappy(90));
+    }
+
+    public boolean isHappy(int n) {
+        HashSet<Integer> st = new HashSet<>();
         int ans = n;
+//        int temp=0;
 
         while (ans != 1) {
             int sum = 0;
@@ -13,15 +20,18 @@ public class KedarHappyNumber {
                 ans = ans / 10;
             }
 
-            ans = sum;
+
+            if (st.contains(sum))
+                return false;
+            else {
+                ans = sum;
+//                temp=sum;
+                st.add(sum);
+            }
         }
 
         return true;
-    }
 
-
-    public static void main(String args[]) {
-        System.out.println(isHappy(91));
     }
 
 }

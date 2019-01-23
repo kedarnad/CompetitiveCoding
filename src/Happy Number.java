@@ -1,6 +1,7 @@
-import java.lang.*;
+import java.util.ArrayList;
+
 class Solution {
-    public boolean isHappy(int n) {
+    public static boolean isHappy(int n) {
         int temp=n;
         ArrayList<Integer> a  = new ArrayList<Integer>();
              int sum=0;
@@ -28,5 +29,5 @@ class Solution {
         }
         
     }
-    
+
 }
