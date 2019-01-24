@@ -1,4 +1,7 @@
-import java.lang.*;
+package CountAndSay;
+
+import java.util.ArrayList;
+
 class Solution {
     public String countAndSay(int n) {
        

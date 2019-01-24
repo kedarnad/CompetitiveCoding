@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 public class KedarHappyNumber {
     public static void main(String args[]) {
-        System.out.println(new KedarHappyNumber().isHappy(90));
+        System.out.println(new KedarHappyNumber().isHappy(40));
     }
 
     public boolean isHappy(int n) {

@@ -1,3 +1,5 @@
+package CountAndSay;
+
 public class CountAndSay {
 
     public static void main(String args[]) {
