@@ -8,16 +8,20 @@ public class SearchInRotatedSortedArray {
 
         int[] nums = {7, 8, 9, 10, 11, 2, 3};
 
-        System.out.println(new SearchInRotatedSortedArray().search(nums, 9));
+        int[] nums1 = {1};
+
+        int[] nums2 = {2, 3};
+
+        System.out.println(new SearchInRotatedSortedArray().search(nums, 1));
     }
 
     public int findPivot(int[] nums, int left, int right) {
 
         if (right < left)
-            return nums[0];
+            return 0;
 
         if (right == left)
-            return nums[left];
+            return left;
 
         int mid = (left + right) / 2;
 
@@ -51,16 +55,20 @@ public class SearchInRotatedSortedArray {
 
     public int search(int[] nums, int target) {
 
-        int pivot = findPivot(nums, 0, nums.length - 1);
-        int key = -1;
-        if (nums[pivot] == target)
-            return pivot;
+        if (nums.length == 0)
+            return -1;
+        if (nums.length == 1)
+            return nums[0] == target ? 0 : -1;
 
-        else if (nums[pivot] > target) {
-            key = BinarySearch(nums, pivot + 1, nums.length, target);
-        } else
-            key = BinarySearch(nums, 0, pivot - 1, target);
+        int lowestIndex = findPivot(nums, 0, nums.length - 1);
 
-        return key;
+        if (nums[lowestIndex] == target) {
+//            System.out.println();
+            return lowestIndex;
+        } else if (lowestIndex == 0)
+            return BinarySearch(nums, 0, nums.length - 1, target);
+        else if (target < nums[0])
+            return BinarySearch(nums, lowestIndex, nums.length - 1, target);
+        return BinarySearch(nums, 0, lowestIndex - 1, target);
     }
 }
