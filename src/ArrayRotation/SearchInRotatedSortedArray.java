@@ -12,7 +12,9 @@ public class SearchInRotatedSortedArray {
 
         int[] nums2 = {2, 3};
 
-        System.out.println(new SearchInRotatedSortedArray().search(nums, 1));
+        int[] nums3 = {5, 1, 2, 3, 4};
+
+        System.out.println(new SearchInRotatedSortedArray().search(nums3, 1));
     }
 
     public int findPivot(int[] nums, int left, int right) {
