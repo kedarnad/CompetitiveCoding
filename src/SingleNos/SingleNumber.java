@@ -1,4 +1,7 @@
-import java.util.*;
+package SingleNos;
+
+import java.util.HashSet;
+import java.util.Set;
 class Solution {
     public int singleNumber(int[] nums) {
    Set<Integer> hash = new HashSet<Integer>(); 
