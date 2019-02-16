@@ -1,0 +1,68 @@
+import java.util.Arrays;
+class Solution {
+    public int compareVersion(String version1, String version2) {
+        ArrayList<String> a= new ArrayList<String>( Arrays.asList(version1.split("\\.")));
+       ArrayList<String> b= new ArrayList<String>( Arrays.asList(version2.split("\\.")));
+        int flag=0;
+        int min=0;
+         //System.out.println( version1.split("\\.")[0]);
+        // System.out.println(b);
+       if(a.size()<b.size())
+       {
+           flag=1;
+           min=a.size();
+       }
+        else if(a.size()>b.size())
+        {
+            flag=2;
+            min=b.size();
+            }
+        else
+        {
+            flag=3;
+            min=a.size();
+        }
+                 //System.out.println(min);
+            for(int i=0;i<min;i++)
+            {
+                int x=Integer.parseInt(a.get(i));
+                int y=Integer.parseInt(b.get(i));
+             //   System.out.println(x);
+                //    System.out.println(y);
+                
+                if(x>y)
+                    return 1;
+                else if(x<y)
+                    return -1;
+                else if(x==y)
+                    continue;
+            }
+        if(flag==1)
+        {
+          // String[] newArray = Arrays.copyOfRange(b.toArray(), min, b.size());
+            String[] dst = new String[b.size()-min];
+
+         System.arraycopy(b.toArray(), min , dst, 0, b.size()-min);
+            boolean match = Arrays.stream(dst).allMatch(s->Integer.parseInt(s)==(Integer.parseInt(dst[0])));
+            if(Integer.parseInt(b.get(min))==0 && match)
+                return 0;
+            else
+            return -1;
+        }
+        else if(flag==2)
+        {
+              String[] dst = new String[a.size()-min];
+
+             // String[] newArray = Arrays.copyOfRange(b.toArray(), min, a.size());
+             System.arraycopy(a.toArray(), min , dst, 0, a.size()-min);
+            boolean match = Arrays.stream(dst).allMatch(s->Integer.parseInt(s)==Integer.parseInt(dst[0]));
+            if(Integer.parseInt(a.get(min))==0 && match)
+                return 0;
+                else
+                    return 1;
+        }
+        else if(a.size()==b.size())
+            return 0;
+       return 0; 
+    }
+}
