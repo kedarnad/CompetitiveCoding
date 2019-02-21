@@ -24,7 +24,6 @@ public class MostCommonWord {
 
         for (String str : words) {
             if (!Arrays.asList(banned).contains(str)) {
-
                 if (!hs.containsKey(str))
                     hs.put(str, 1);
                 else {
