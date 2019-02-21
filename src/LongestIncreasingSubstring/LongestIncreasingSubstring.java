@@ -11,6 +11,9 @@ public class LongestIncreasingSubstring {
 
     public int lengthofLIS(int[] nums) {
 
+        if (nums.length == 0)
+            return 0;
+
         int[] sumStorage = new int[nums.length];
 
         sumStorage[0] = 1;
@@ -31,6 +34,7 @@ public class LongestIncreasingSubstring {
             ans = Math.max(ans, sumStorage[i]);
         }
 
+//        System.out.println("Printing sumStorage: "+ Arrays.toString(sumStorage));
         return ans;
     }
 }
