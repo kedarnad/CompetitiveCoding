@@ -1,3 +1,9 @@
+package CoingChange;
+
+/**
+ * This is a Dyanamic programming solution to the coin change problem
+ */
+
 public class CoinChangeProblem {
 
     public static void printAmount(int[] arr) {
@@ -27,4 +33,9 @@ public class CoinChangeProblem {
         System.out.println(change(12, new int[]{1, 2, 5}));
 
     }
+
+
+    /**
+     * The Complexity of the dyanamic programming solution is: O(amt * NoOfCoins)
+     */
 }
