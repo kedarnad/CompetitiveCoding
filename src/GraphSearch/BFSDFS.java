@@ -115,6 +115,7 @@ public class BFSDFS {
 
         LinkedList<Node> adjacent = new LinkedList<>();
         private int id;
+        private int ASNumber;
 
         private Node(int id) {
             this.id = id;
