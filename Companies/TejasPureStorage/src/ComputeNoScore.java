@@ -5,7 +5,7 @@ public class ComputeNoScore {
 
     public static int compute_number_score(int number) {
         int sum = 0;
-        String num = new String(String.valueOf(number));
+        String num = String.valueOf(number);
 //
 //        //computing 9
 //        for(int i=0; i<num.length(); i++){

@@ -4,7 +4,7 @@ import java.util.List;
 public class MonotoneDigits {
 
     public static int findMonotoneIncreasingOrder(int num) {
-        String str = new String(num + "");
+        String str = num + "";
         char[] nums = str.toCharArray();
         List<Integer> list = new LinkedList<>();
         for (int i = 0; i < nums.length; i++) {
@@ -48,7 +48,7 @@ public class MonotoneDigits {
     public static void main(String[] args) {
 //        System.out.println(findMonotoneIncreasingOrder(1000));
 
-        String str = new String("ABC IS NOT EQUAL TO XYZ");
+        String str = "ABC IS NOT EQUAL TO XYZ";
         //Standard method of conversion
         System.out.println(str.toLowerCase());
     }

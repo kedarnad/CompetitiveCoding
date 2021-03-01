@@ -11,7 +11,7 @@ public class OmkarAkuna2 {
 
     }
 
-    public int getTreeSum(int arr[], int k) {
+    public int getTreeSum(int[] arr, int k) {
         TNode root = createNArrayTree(arr, 0, k);
         LinkedList<Integer> list = new LinkedList<>();
         createSums(root, list);

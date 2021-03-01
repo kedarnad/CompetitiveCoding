@@ -4,14 +4,14 @@ public class OmkarAkuna {
     public static void main(String[] args) {
         int[] arr = {10, 2, -10, 5, 20};
 
-        int arr1[] = {3, -4, -3, -5, 0};
+        int[] arr1 = {3, -4, -3, -5, 0};
 
         OmkarAkuna omkarAkuna = new OmkarAkuna();
         int max_val = omkarAkuna.getTreeSum(arr1);
         System.out.println(max_val);
     }
 
-    public int getTreeSum(int arr[]) {
+    public int getTreeSum(int[] arr) {
         TNode root = createMinBinTree(arr);
 //       printBST(root);
         LinkedList<Integer> list = new LinkedList<>();
@@ -57,11 +57,11 @@ public class OmkarAkuna {
     }
 
 
-    public TNode createMinBinTree(int arr[]) {
+    public TNode createMinBinTree(int[] arr) {
         return createMinBinTree(arr, 0);
     }
 
-    public TNode createMinBinTree(int arr[], int index) {
+    public TNode createMinBinTree(int[] arr, int index) {
         if (index >= arr.length) return null;
 
         TNode tNode = new TNode();

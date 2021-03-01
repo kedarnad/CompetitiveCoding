@@ -81,9 +81,9 @@ public class WeightedString {
         }
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
-        System.out.println(String.valueOf((char) 65));
+        System.out.println((char) 65);
 //        System.out.println(popMap());
         System.out.println(weightString(20));
     }

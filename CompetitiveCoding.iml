@@ -9,18 +9,20 @@
       <sourceFolder url="file://$MODULE_DIR$/ArraysAndStrings/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/BItWise/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LinkedList/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AdityaWayFair/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Companies/AdityaWayFair/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Trees/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Ayco/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/VaibhaviAssignment/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/TejasPureStorage/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/AdityaLandgeAmazon/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/KedarDataCore/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Companies/Ayco/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Companies/VaibhaviAssignment/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Companies/TejasPureStorage/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Companies/AdityaLandgeAmazon/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Companies/KedarDataCore/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SystemDesign/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LRU/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/QueenAttack/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/SystemDesign/HashTable/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/SAPSVNT2020/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Companies/SAPSVNT2020/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Companies/Roblox/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Companies/Ebay/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

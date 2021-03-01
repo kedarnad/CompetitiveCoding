@@ -4,7 +4,7 @@ public class ValidTime {
     public static Integer[] solution(Integer[] N, int K) {
 
         int imax = 0, jmax = 0, i = 0, j = K - 1, sumMax = 0, sumIter = 0;
-        Integer result[] = new Integer[K];
+        Integer[] result = new Integer[K];
 
         //calculating the initial sum
         for (int l = 0; l < K; l++) {
