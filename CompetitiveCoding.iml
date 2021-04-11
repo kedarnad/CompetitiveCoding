@@ -23,6 +23,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Companies/SAPSVNT2020/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Companies/Roblox/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Companies/Ebay/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Companies/WEPay/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SystemDesign/Heap/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
